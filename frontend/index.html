@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Projeto E-Commerce</title>
+    <link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/apphome.css">
+
+    <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+    <script src="vendor/semantic/semantic.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Menu Principal -->
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="active item" href="index.html">Home</a>
+            <a class="item" href="produto.html">Produtos</a>
+            <a class="item" href="contato.html">Contato</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button" href="login.html">Login</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button" href="cadastro.html">Cadastre-se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu lateral -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="active item" href="index.html">Home</a>
+        <a class="item" href="produto.html">Produtos</a>
+        <a class="item" href="contato.html">Contato</a>
+        <a class="item" href="login.html">Login</a>
+        <a class="item" href="cadastro.html">Cadastre-se</a>
+    </div>
+
+    <!-- Conteudo da Pagina -->
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment">
+            <div class="ui container">
+                <div class="ui large secondary pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="active item" href="index.html">Home</a>
+                    <a class="item" href="produto.html">Produtos</a>
+                    <a class="item" href="contato.html">Contato</a>
+                    <div class="right menu">
+                        <a class="ui secondary basic button info-modal-link" href="login.html">Login</a>
+                        <a class="ui secondary basic button info-modal-link" href="cadastro.html">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui text container">
+                <h1 class="ui header"> Bem vindo a nossa página!</h1>
+                <h2 class="ui header"> Estamos sempre ao seu dispor.</h2>
+                <a class="ui huge secondary button"> Entrar <i class="right arrow icon"></i></a>
+            </div>
+        </div>
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column">
+                        <h3 class="ui header"> Quem somos </h3>
+                        <p>Ex ipsam fugiat a itaque quis 33 ipsa modi. Et architecto magni qui voluptas officiis aut inventore quia. Ab autem aliquid sit dignissimos nisi id explicabo temporibus et consequuntur aspernatur cum facere fugiat sit voluptatibus asperiores! Aut reiciendis voluptas sit enim odit et natus accusamus eum obcaecati autem et voluptates aperiam sed voluptatum dolorum et recusandae aliquid?</p>
+
+                        <h3 class="ui header"> Conheça os nossos serviços </h3>
+                        <p>Lorem ipsum dolor sit amet. Eum molestiae amet qui laborum saepe et aspernatur dolor est totam tenetur non Quis natus est maiores iste a blanditiis corrupti. Et officiis accusantium a illo doloremque hic libero tempore et nostrum debitis et placeat quos. Non dolores odit in corrupti consectetur ut quos quam ea architecto consequatur ut voluptatem reiciendis vel enim temporibus.</p>
+                    </div>
+                    <div class="six wide right floated column">
+                        <img src="assets/img/logo/logo.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center aligned column">
+                        <a class="ui huge button" href="">Saiba mais!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable divided equal height grid">
+                    <div class="three wide column">
+                        <h4 class="ui header">Menu</h4>
+                        <div class="ui link list">
+                            <a class="item" href="index.html">Home</a>
+                            <a class="item" href="produtos.html">Produtos</a>
+                            <a class="item" href="contato.html">Contato</a>
+
+                            <a class="item" href="login.html">Login</a>
+                            <a class="item" href="cadastro.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui header">Serviços</h4>
+                        <div class="ui link list">
+                            <a class="item" href="">Desenvolvimento Front-End</a>
+                            <a class="item" href="">Desenvolvimento Back-End</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4 class="ui header">Projeto E-commerce</h4>
+                        <p>&copy; 2024 Projeto E-commerce - Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        $(document).ready(
+            function() {
+                $('.masthead').visibility({
+                    once: false,
+                    onBottonPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottonPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                });
+
+                $('.ui.sidebar').sidebar('attach events','.toc.item');
+            }
+        );
+    </script>
+    
+
+</body>
+</html>
+

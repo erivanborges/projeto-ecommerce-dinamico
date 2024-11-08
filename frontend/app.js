@@ -1,0 +1,1 @@
+var appFE = angular.module('appFE', []);

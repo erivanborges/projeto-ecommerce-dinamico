@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Projeto E-Commerce</title>
+    <link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/apprest.css">
+
+    <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+    <script src="vendor/semantic/semantic.min.js"></script>
+</head>
+<body>
+
+    <!-- Menu lateral -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="item" href="index.html">Home</a>
+        <a class="item" href="produto.html">Produtos</a>
+        <a class="item" href="contato.html">Contato</a>
+        <a class="item" href="login.html">Login</a>
+        <a class="item" href="cadastro.html">Cadastre-se</a>
+    </div>
+
+    <!-- Conteudo da pagina -->
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment">
+            <div class="ui container">
+                <div class="ui large secondary pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="item" href="index.html">Home</a>
+                    <a class="item" href="produto.html">Produtos</a>
+                    <a class="item" href="contato.html">Contato</a>
+                    <div class="right item">
+                        <a class="ui secondary basic button info-modal-link" href="login.html">Login</a>
+                        <a class="ui secondary basic button info-modal-link" href="cadastro.html">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="wide column">
+                        <h1 class="ui horizontal divider">CADASTRO</h1>
+                        <form class="ui form">
+                            <div class="field">
+                                <label>Nome Completo</label>
+                                <input type="text" name="nomecompleto" placeholder="Informe o Nome Completo">
+                            </div>
+                            <div class="field">
+                                <label>CPF / CNPJ</label>
+                                <input type="text" name="cpfcnpj" placeholder="Informe o seu CPF / CNPJ">
+                            </div>
+                            <div class="field">
+                                <label>Natural de</label>
+                                <input type="text" name="naturalidade" placeholder="Informe a cidade de nascimento">
+                            </div>
+                            <div class="field">
+                                <label>E-mail</label>
+                                <input type="text" name="email" placeholder="Informe o seu E-mail">
+                            </div>
+                            <div class="four fields">
+                                <div class="field">
+                                    <label>CEP</label>
+                                    <input type="text" name="cep" placeholder="Informe o CEP">
+                                </div>
+                                <div class="field">
+                                    <label>Endereço</label>
+                                    <input type="text" name="endereco" placeholder="Informe o seu endereço">
+                                </div>
+                                <div class="field">
+                                    <label>Complemento</label>
+                                    <input type="text" name="complemento" placeholder="Complemento">
+                                </div>
+                                <div class="field">
+                                    <label>Número</label>
+                                    <input type="text" name="numero" placeholder="Informe o número">
+                                </div>
+                            </div>
+                            <div class="three fields">
+                                <div class="field">
+                                    <label>Cidade</label>
+                                    <input type="text" name="cidade" placeholder="Informe a cidade">
+                                </div>
+                                <div class="field">
+                                    <label>Estado</label>
+                                    <input type="text" name="uf" placeholder="Informe o estado">
+                                </div>
+                                <div class="field">
+                                    <label>Bairro</label>
+                                    <input type="text" name="bairro" placeholder="Informe o bairro">
+                                </div>
+                            </div>
+                            <div class="two fields">
+                                <div class="field">
+                                    <label>Telefone</label>
+                                    <input type="text" name="Telefone" placeholder="Informe o número de telefone">
+                                </div>
+                                <div class="field">
+                                    <label>Celular</label>
+                                    <input type="text" name="celular" placeholder="Informe o número de celular">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Mensagem</label>
+                                <textarea name="mensagem" placeholder="Mensagem"></textarea>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" tabindex="0">
+                                    <label>Eu concordo com os Termos e Condições</label>
+                                </div>
+                            </div>
+                            <button class="ui button" type="submit">Salvar</button>
+                            <div class="ui error message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable divided equal height grid">
+                    <div class="three wide column">
+                        <h4 class="ui header">Menu</h4>
+                        <div class="ui link list">
+                            <a class="item" href="index.html">Home</a>
+                            <a class="item" href="produto.html">Produtos</a>
+                            <a class="item" href="contato.html">Contato</a>
+
+                            <a class="item" href="login.html">Login</a>
+                            <a class="item" href="cadastro.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui header">Serviços</h4>
+                        <div class="ui link list">
+                            <a class="item" href="">Desenvolvimento Front-End</a>
+                            <a class="item" href="">Desenvolvimento Back-End</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4>Projeto Final</h4>
+                        <p>&copy; 2024 Projeto Final - Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(
+            function() {
+                $('masthead').visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('fixed.menu').transition('fade in');
+                    },
+                    onBottomReverse: function() {
+                        $('fixed.menu').transition('fade out');
+                    }
+                });
+                $('.ui.sidebar')
+                .sidebar('attach events', '.toc.item');
+            }
+        );
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.ui.form').form({
+                fields: {
+                    nomecompleto: {
+                        identifier: 'nomecompleto',
+                        rules: [{
+                            type: 'empty',
+                            prompt: 'O campo Nome Completo é obrigatorio.'
+                    }]
+                    },
+                    cpfcnpj: {
+                        identifier: 'cpfcnpj',
+                        rules: [{
+                            type: 'empty',
+                            prompt: 'O campo CPF / CNPJ é obrigatório.'
+                        }]
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
